@@ -30,7 +30,7 @@ body {
 .imagem img {
     height: 450px;
     width: 450px;
-    margin-left: 50px
+    margin-left: 50px;
 }
 
 nav {
@@ -62,12 +62,12 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.manobra{
+.manobra {
     color: #931406;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
-.manobra:hover{
+.manobra:hover {
     color: black;
     transition: 0.3s;
 }
@@ -88,8 +88,8 @@ nav ul li a:hover {
     background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%);
     margin-top: 10px;
     color: rgb(230, 195, 81);
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .title1 {
@@ -132,49 +132,52 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/*.card svg{
-    height: 40px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.card rect{
-    fill: none;
-    stroke: var(--default);
-    stroke-width: 2;
-    stroke-dasharray: 450, 0;
-    transition: all, 0.5s linear;
-}
-
-.card:hover rect{
-    stroke-width: 5;
-    stroke-dasharray: 20, 300;
-    stroke-dashoffset: 48;
-    stroke: var(--primary);
-    transition: all 2s cubic-bezier(0.22, 1, 0.25,1
-    )
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .card {
-        width: 100%;
+    nav {
+        margin-inline: 10px; /* Reduce side margins */
+        margin-top: 0; /* Reset top margin */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing for nav items */
     }
 
     .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagem img {
-        width: 100%;
-        height: auto;
+        flex-direction: column; /* Stack text and image */
+        align-items: center; /* Center content */
     }
 
     .text {
-        width: 100%;
-        margin-right: 0;
+        width: 90%; /* Full width on mobile */
+        margin-right: 0; /* Remove right margin */
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .imagem img {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .quad {
+        font-size: 24px; /* Smaller font size for mobile */
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center the title */
+    }
+
+    .container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .card {
+        width: 90%; /* Full width for cards */
+        max-width: 300px; /* Max width for cards */
     }
 }

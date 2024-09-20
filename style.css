@@ -45,12 +45,12 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.home{
+.home {
     color: #931406;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
-.home:hover{
+.home:hover {
     color: black;
     transition: 0.3s;
 }
@@ -60,8 +60,8 @@ nav ul li a:hover {
     background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%);
     margin-top: 10px;
     color: rgb(230, 195, 81);
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .title1 {
@@ -75,25 +75,18 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-
-.flex-container {
-    display: flex;
-    align-items: flex-start; /* Aligns items at the start of the cross axis */
-}
-
 .pinline {
     font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
     text-align: justify;
-    width: 500px; 
-    margin-right: 150px; 
-    
+    width: 500px;
+    margin-right: 150px;
 }
 
 .eagle {
-    height: 500px; 
-    width: 500px; 
+    height: 500px;
+    width: 500px;
 }
 
 .container {
@@ -122,7 +115,7 @@ nav ul li a:hover {
 }
 
 .card p {
-    font-size: 1em; 
+    font-size: 1em;
     color: #000000;
 }
 
@@ -130,3 +123,49 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        margin-inline: 10px; /* Reduce side margins */
+        margin-top: 0; /* Reset top margin */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing for nav items */
+    }
+
+    .title1 {
+        font-size: 24px; /* Smaller title font size */
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+        text-align: center; /* Center title */
+    }
+
+    .pinline {
+        width: 90%; /* Full width on mobile */
+        margin: 20px auto; /* Center paragraph */
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .eagle {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 400px; /* Max width for large images */
+        margin: 20px auto; /* Center image */
+    }
+
+    .container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .card {
+        width: 90%; /* Full width for cards */
+        max-width: 300px; /* Max width for cards */
+    }
+}
