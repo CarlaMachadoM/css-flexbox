@@ -62,12 +62,12 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
-.racing{
+.speeds{
     color: #931406;
     transition:0.3s;
 }
 
-.racing:hover{
+.speeds:hover{
     color: black;
     transition: 0.3s;
 }

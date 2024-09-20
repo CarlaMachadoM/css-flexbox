@@ -1,11 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
 .flex-container {
-    display: flex; /* Enable flexbox */
-    align-items: flex-start; /* Align items at the start of the cross axis */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 30px;
 }
 
 nav {
     margin-inline: 220px;
-    margin-top: -50px;
+    margin-top: -30px;
     text-decoration: none;
 }
 
@@ -15,11 +28,6 @@ nav ul {
     justify-content: space-between;
     padding-inline: 20px;
     list-style-type: none;
-    margin: 0; 
-}
-
-nav ul li {
-    display: flex;
 }
 
 nav ul li a {
@@ -27,9 +35,9 @@ nav ul li a {
     font-size: large;
     font-family: fantasy;
     color: rgb(0, 0, 0);
-    justify-content: center;
     transition: 0.3s;
     margin-left: 30px;
+    margin-top: 20px;
 }
 
 nav ul li a:hover {
@@ -52,17 +60,19 @@ nav ul li a:hover {
     background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%);
     margin-top: 10px;
     color: rgb(230, 195, 81);
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .title1 {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
+    margin-top: 50px;
+    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, rgb(231, 189, 71) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: inline-block;
-    /* Gradiente no texto */
-    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, rgb(231, 189, 71) 100%); /* Define o gradiente */
-    -webkit-background-clip: text; /* Recorta o fundo no formato do texto */
-    -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
 }
 
 
@@ -78,7 +88,7 @@ nav ul li a:hover {
     text-align: justify;
     width: 500px; 
     margin-right: 150px; 
-    margin-left: 30px;
+    
 }
 
 .eagle {
@@ -98,7 +108,8 @@ nav ul li a:hover {
     background: linear-gradient(to right, #ce2e2e 0%, #e2db56 70%, bisque 100%);
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    width: 300px;
+    height: 250px;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease;
