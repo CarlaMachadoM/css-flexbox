@@ -37,6 +37,16 @@ nav ul li a:hover {
     transition: 0.3s;
 }
 
+.home{
+    color: #931406;
+    transition:0.3s;
+}
+
+.home:hover{
+    color: black;
+    transition: 0.3s;
+}
+
 .title {
     font-family: fantasy;
     background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%);
@@ -50,7 +60,7 @@ nav ul li a:hover {
     margin-left: 30px;
     display: inline-block;
     /* Gradiente no texto */
-    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%); /* Define o gradiente */
+    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, rgb(231, 189, 71) 100%); /* Define o gradiente */
     -webkit-background-clip: text; /* Recorta o fundo no formato do texto */
     -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
 }
@@ -66,13 +76,46 @@ nav ul li a:hover {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
     text-align: justify;
-    width: 500px; /* Width of the text */
-    margin-right: 150px; /* Space between text and image */
+    width: 500px; 
+    margin-right: 150px; 
     margin-left: 30px;
 }
 
 .eagle {
-    height: 500px; /* Image height */
-    width: 500px; /* Image width */
+    height: 500px; 
+    width: 500px; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: linear-gradient(to right, #ce2e2e 0%, #e2db56 70%, bisque 100%);
+    border-radius: 8px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #000000;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
