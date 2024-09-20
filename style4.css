@@ -166,9 +166,10 @@ nav ul li a:hover {
     }
 
     .quad {
-        font-size: 24px; /* Smaller font size for mobile */
-        margin-left: 0; /* Remove left margin */
-        text-align: center; /* Center the title */
+        font-size: 24px; /* Smaller title font size */
+        margin-left: 14rem; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+        text-align: center; /* Center title */
     }
 
     .container {

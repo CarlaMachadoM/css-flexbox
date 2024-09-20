@@ -13,9 +13,10 @@ body {
 /* Flexbox container for text and image */
 .flex-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content:flex-start;
+    align-items:center;
     margin: 30px;
+    flex-direction: row-reverse;
 }
 
 .text {
@@ -25,12 +26,12 @@ body {
     text-align: justify;
     width: 500px; 
     margin-right: 30px; 
+    margin-left: 100px;
 }
 
 .imagem img {
     height: 450px;
     width: 450px;
-    margin-left: 50px;
 }
 
 nav {
@@ -98,12 +99,28 @@ nav ul li a:hover {
     margin-left: 30px;
 }
 
-.container {
+.containerpai{
+    flex-direction: row;
+    display: flex;
+}
+
+.container1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap:20px;
     padding: 20px;
+    flex-direction: column;
+    margin-left:100px;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding: 20px;
+    flex-direction: column;
+    margin-left: 400px;
 }
 
 .card {
@@ -134,6 +151,7 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
     nav {
         margin-inline: 10px; /* Reduce side margins */
         margin-top: 0; /* Reset top margin */
@@ -148,29 +166,57 @@ nav ul li a:hover {
         margin: 10px 0; /* Vertical spacing for nav items */
     }
 
-    .text {
+    .flex-container {
+        flex-direction: column; /* Stack text and image */
+        align-items: center; /* Center content */
         width: 90%; /* Full width on mobile */
-        margin-right: 0; /* Remove right margin */
+        margin: 20px auto; /* Center paragraph */
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .text {
+        width: 100%; /* Full width on mobile */
+        margin-right: 6rem; /* Remove right margin */
         font-size: 18px; /* Slightly smaller font size */
     }
 
     .imagem img {
-        width: 100%; /* Full width on mobile */
+        width: 70%; /* Full width on mobile */
         height: auto; /* Maintain aspect ratio */
-        margin-left: 0; /* Remove left margin */
+        margin-left: 5rem; /* Remove left margin */
     }
 
     .quad {
-        font-size: 24px; /* Smaller font size for mobile */
-        margin-left: 0; /* Remove left margin */
-        text-align: center; /* Center the title */
+        font-size: 24px; /* Smaller title font size */
+        margin-left: 14rem; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+        text-align: center; /* Center title */
     }
 
-    .container {
+    .card{
+        height: auto;
+        width: 100%;
+    }
+
+    .containerpai{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .container1 {
         flex-direction: column; /* Stack cards vertically */
         align-items: center; /* Center cards */
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
     }
-
+    .container2 {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+    }
     .card {
         width: 90%; /* Full width for cards */
         max-width: 300px; /* Max width for cards */
