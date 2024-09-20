@@ -1,0 +1,78 @@
+.flex-container {
+    display: flex; /* Enable flexbox */
+    align-items: flex-start; /* Align items at the start of the cross axis */
+}
+
+nav {
+    margin-inline: 220px;
+    margin-top: -50px;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 20px;
+    list-style-type: none;
+    margin: 0; 
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: large;
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    transition: 0.3s;
+    margin-left: 30px;
+}
+
+nav ul li a:hover {
+    color: #931406;
+    transition: 0.3s;
+}
+
+.title {
+    font-family: fantasy;
+    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%);
+    margin-top: 10px;
+    color: rgb(230, 195, 81);
+}
+
+.title1 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    display: inline-block;
+    /* Gradiente no texto */
+    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%); /* Define o gradiente */
+    -webkit-background-clip: text; /* Recorta o fundo no formato do texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the start of the cross axis */
+}
+
+.pinline {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    width: 500px; /* Width of the text */
+    margin-right: 150px; /* Space between text and image */
+    margin-left: 30px;
+}
+
+.eagle {
+    height: 500px; /* Image height */
+    width: 500px; /* Image width */
+}
+
