@@ -195,22 +195,15 @@ nav ul li a:hover {
         text-align: center; /* Center title */
     }
 
-    .container1 {
+    .container1, .container2 {
         flex-direction: column; /* Empilha os cartões verticalmente */
-        align-items: center; /* Centraliza cartões */
-        height: auto;
-        width: 100%;
-    }
-
-    .container2 {
-        flex-direction: column; /* Empilha os cartões verticalmente */
-        align-items: center; /* Centraliza cartões */
+        align-items: center; /* Centraliza os cartões */
         height: auto;
         width: 100%;
     }
 
     .card {
-        width: 100%; /* Largura total dos cartões */
-        height: 500px;
+        width: 90%; /* Largura ajustada para dispositivos móveis */
+        height: auto; /* Altura automática para um melhor ajuste */
     }
 }
