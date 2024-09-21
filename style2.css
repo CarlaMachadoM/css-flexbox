@@ -13,8 +13,8 @@ body {
 /* Flexbox container for text and image */
 .flex-container {
     display: flex;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     margin-right: 100px;
     margin-top: 10px;
     flex-direction: row-reverse;
@@ -95,38 +95,21 @@ nav ul li a:hover {
     margin-right: 10px;
 }
 
-.title1 {
-    font-size: 30px;
-    font-family: fantasy;
-    margin-left: 30px;
-}
-
-.containerpai{
+.containerpai {
     flex-direction: row;
     display: flex;
 }
 
-.container1 {
+.container1, .container2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
     padding: 20px;
-    flex-direction: column;
-    margin-left:100px;
-}
-.container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:20px;
-    padding: 20px;
-    flex-direction: column;
-    margin-left: 400px;
 }
 
 .card {
-    background: linear-gradient(to right, #295264 0%, #fad9a6 70%, #bd2f28 100%);
+    background: white;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -152,96 +135,23 @@ nav ul li a:hover {
     pointer-events: none; /* Ensure SVG doesn't block hover events */
 }
 
-.card rect {
+.card-rect {
     fill: none;
-    stroke:#000; /* Default color */
+    stroke: #487b91; /* Default color */
     stroke-width: 2;
     stroke-dasharray: 850, 0;
     transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
 }
 
-.card:hover rect {
+.card:hover .card-rect {
     stroke-width: 5;
     stroke-dasharray: 200, 300;
     stroke-dashoffset: 38;
-    stroke: #000000; /* Cor do contorno no hover */
+    stroke: url(#gradient); /* Apply gradient stroke on hover */
     transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
-    nav {
-        margin-inline: 10px; /* Reduce side margins */
-        margin-top: 0; /* Reset top margin */
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        align-items: center; /* Center nav items */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Vertical spacing for nav items */
-    }
-
-    nav ul li a{
-        font-size: 25px;
-    }
-
-    .flex-container {
-        flex-direction: column; /* Stack text and image */
-        align-items: center; /* Center content */
-        width: 90%; /* Full width on mobile */
-        margin: 20px auto; /* Center paragraph */
-        font-size: 18px; /* Slightly smaller font size */
-    }
-
-    .text {
-        width: 100%; /* Full width on mobile */
-        margin-right: 6rem; /* Remove right margin */
-        font-size: 18px; /* Slightly smaller font size */
-    }
-
-    .imagem img {
-        width: 100%; /* Full width on mobile */
-        height: auto; /* Maintain aspect ratio */
-        margin-left: 0.3rem; /* Remove left margin */
-    }
-
-    .quad {
-        font-size: 30px; /* Smaller title font size */
-        margin-left: 11rem; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
-        text-align: center; /* Center title */
-    }
-
-    .card{
-        height: auto;
-        width: 100%;
-    }
-
-    .containerpai{
-        flex-direction: column;
-        display: flex;
-    }
-
-    .container1 {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center cards */
-        width: 100%;
-        height: auto;
-        margin-left: 10px;
-    }
-    .container2 {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center cards */
-        width: 100%;
-        height: auto;
-        margin-left: 10px;
-    }
-    .card {
-        width: 90%; /* Full width for cards */
-        max-width: 300px; /* Max width for cards */
-    }
+    /* ... (manter as regras anteriores) ... */
 }

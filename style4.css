@@ -103,8 +103,9 @@ nav ul li a:hover {
     flex-direction: row;
 }
 
+/* Card Styles */
 .card {
-    background: linear-gradient(to right, #eb987f 0%, #ffffff 70%, #ee1022 100%);
+    background: white;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -121,7 +122,7 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-.card svg {
+.card-svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -130,19 +131,19 @@ nav ul li a:hover {
     pointer-events: none; /* Ensure SVG doesn't block hover events */
 }
 
-.card rect {
+.card-rect {
     fill: none;
-    stroke:#000; /* Default color */
+    stroke: #ee1022; /* Default color */
     stroke-width: 2;
     stroke-dasharray: 850, 0;
     transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
 }
 
-.card:hover rect {
+.card:hover .card-rect {
     stroke-width: 5;
     stroke-dasharray: 200, 300;
     stroke-dashoffset: 38;
-    stroke: #000000; /* Cor do contorno no hover */
+    stroke: url(#gradient); /* Apply gradient stroke on hover */
     transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
 

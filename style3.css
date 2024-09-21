@@ -32,7 +32,7 @@ body {
     width: 700px;
     margin-left: 50px;
     border-radius: 10px;
-    margin-top: 4rem
+    margin-top: 4rem;
 }
 
 nav {
@@ -65,12 +65,12 @@ nav ul li a:hover {
 }
 
 .manobra {
-    color: #562c64;
+    color: #ee887a;
     transition: 0.3s;
 }
 
 .manobra:hover {
-    color: black;
+    color: #f7c081;
     transition: 0.3s;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
     margin-top: 50px;
-    background: linear-gradient(to right, #2d1b33 0%, #f36a71 70%, #ee887a);
+    background: linear-gradient(to right, #95de90 0%, #cef781 70%, #f7c081);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -87,7 +87,7 @@ nav ul li a:hover {
 
 .title {
     font-family: fantasy;
-    background: linear-gradient(to right, #2d1b33 0%, #f36a71 70%, #ee887a);
+    background: linear-gradient(to right, #95de90 0%, #cef781 70%, #f7c081);
     margin-top: 10px;
     color: #ee887a;
     margin-left: 10px;
@@ -106,12 +106,12 @@ nav ul li a:hover {
     justify-content: center;
     gap: 40px;
     padding: 20px;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
 }
 
 /* Card Styles */
 .card {
-    background: linear-gradient(to right, #2d1b33 0%, #f36a71 70%, #ee887a);
+    background: white;
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -128,7 +128,7 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-.card svg {
+.card-svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -137,22 +137,21 @@ nav ul li a:hover {
     pointer-events: none; /* Ensure SVG doesn't block hover events */
 }
 
-.card rect {
+.card-rect {
     fill: none;
-    stroke:#000; /* Default color */
+    stroke: #95de90; /* Default color */
     stroke-width: 2;
     stroke-dasharray: 850, 0;
     transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
 }
 
-.card:hover rect {
+.card:hover .card-rect {
     stroke-width: 5;
     stroke-dasharray: 200, 300;
     stroke-dashoffset: 38;
-    stroke: #000000; /* Cor do contorno no hover */
+    stroke: url(#gradient); /* Apply gradient stroke on hover */
     transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -170,7 +169,7 @@ nav ul li a:hover {
         margin: 10px 0; /* Vertical spacing for nav items */
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 25px;
     }
 
