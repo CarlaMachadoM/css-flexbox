@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 .home {
-    color: #931406;
+    color: #247235;
     transition: 0.3s;
 }
 
@@ -57,9 +57,9 @@ nav ul li a:hover {
 
 .title {
     font-family: fantasy;
-    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%);
+    background: linear-gradient(to right, #f7e6a6 0%, #3e6b48 70%, #b5b479 100%);
     margin-top: 10px;
-    color: rgb(230, 195, 81);
+    color: #3e6b48;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -69,7 +69,7 @@ nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
     margin-top: 50px;
-    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, rgb(231, 189, 71) 100%);
+    background: linear-gradient(to right, #f7e6a6 0%, #3e6b48 70%, #b5b479 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -99,13 +99,15 @@ nav ul li a:hover {
 }
 
 .card {
-    background: linear-gradient(to right, #ce2e2e 0%, #e2db56 70%, bisque 100%);
+    background: linear-gradient(to right, #f7e6a6 0%, #3e6b48 70%, #b5b479 100%);
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
     height: 250px;
     padding: 20px;
     text-align: center;
+    position: relative; /* Necessário para o SVG */
+    overflow: hidden; /* Evita que o SVG transborde */
     transition: transform 0.3s ease;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -113,61 +115,46 @@ nav ul li a:hover {
 .card h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    position: relative; /* Garante que o texto fique sobre o SVG */
+    z-index: 1;
 }
 
 .card p {
     font-size: 1em;
     color: #000000;
+    position: relative; /* Garante que o texto fique sobre o SVG */
+    z-index: 1;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-/*.button{
-    color: var(--default);
-    cursor: pointer;
-    font-size:1rem;
-    line-height:2.5rem;
-    max-width:160px;
-    width: 100%;
-    letter-spacing:0.3rem;
-    font-weight:600;
-    position: relative;
-    text-decoration:none;
-    text-transform: uppercase;
-    display:flex;
-    justify-content:center;
-    transition:all 1s ease-in;
-}
-
-.button:hover{
-    color:var(--primary);
-}
-
-.button svg{
-    height:40px;
-    left:0;
-    top:0;
+/* Estilos para o SVG */
+.card-svg {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
-.button rect{
+.card rect {
     fill: none;
-    stroke: var(--default);
+    stroke: #000; /* Cor inicial do contorno */
     stroke-width: 2;
-    stroke-dasharray: 450, 0;
-    transition: all 0.5s cubic-bezier(0.22, 1, 0.25, 1);
+    stroke-dasharray: 890, 0;
+    transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
 }
 
-.button:hover rect{
+.card:hover rect {
     stroke-width: 5;
-    stroke-dasharray: 20, 300;
-    stroke-dashoffset: 48;
-    stroke: var(--primary);
-    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1)
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+    stroke: #000000; /* Cor do contorno no hover */
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

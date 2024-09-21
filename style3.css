@@ -29,7 +29,7 @@ body {
 
 .imagem img {
     height: 450px;
-    width: 600px;
+    width: 700px;
     margin-left: 50px;
     border-radius: 10px;
 }
@@ -59,12 +59,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #931406;
+    color: #ee887a;
     transition: 0.3s;
 }
 
 .manobra {
-    color: #931406;
+    color: #562c64;
     transition: 0.3s;
 }
 
@@ -78,7 +78,7 @@ nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
     margin-top: 50px;
-    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, rgb(231, 189, 71) 100%);
+    background: linear-gradient(to right, #2d1b33 0%, #f36a71 70%, #ee887a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -86,9 +86,9 @@ nav ul li a:hover {
 
 .title {
     font-family: fantasy;
-    background: linear-gradient(to right, #b11a09 0%, #ddda97 70%, bisque 100%);
+    background: linear-gradient(to right, #2d1b33 0%, #f36a71 70%, #ee887a);
     margin-top: 10px;
-    color: rgb(230, 195, 81);
+    color: #ee887a;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -108,8 +108,9 @@ nav ul li a:hover {
     flex-direction:row-reverse;
 }
 
+/* Card Styles */
 .card {
-    background: linear-gradient(to right, #ce2e2e 0%, #e2db56 70%, bisque 100%);
+    background: linear-gradient(to right, #2d1b33 0%, #f36a71 70%, #ee887a);
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -118,21 +119,39 @@ nav ul li a:hover {
     text-align: center;
     transition: transform 0.3s ease;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.card h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1em;
-    color: #000000;
+    position: relative; /* Position relative for SVG */
+    overflow: hidden; /* Ensure SVG stays within card bounds */
 }
 
 .card:hover {
     transform: scale(1.05);
 }
+
+.card svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure SVG doesn't block hover events */
+}
+
+.card rect {
+    fill: none;
+    stroke:#000; /* Default color */
+    stroke-width: 2;
+    stroke-dasharray: 850, 0;
+    transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
+}
+
+.card:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 200, 300;
+    stroke-dashoffset: 38;
+    stroke: #000000; /* Cor do contorno no hover */
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 1);
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -166,9 +185,9 @@ nav ul li a:hover {
     }
 
     .imagem img {
-        width: 70%; /* Full width on mobile */
+        width: 100%; /* Full width on mobile */
         height: auto; /* Maintain aspect ratio */
-        margin-left: 5rem; /* Remove left margin */
+        margin-left: 0.6rem; /* Remove left margin */
     }
 
     .quad {
