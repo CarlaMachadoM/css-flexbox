@@ -178,14 +178,13 @@ nav ul li a:hover {
         text-align: center; /* Center title */
     }
 
-    .container1 {
+    .container {
         flex-direction: column; /* Stack cards vertically */
         align-items: center; /* Center cards */
+        height: auto;
+        width: 100%;
     }
-    .container2 {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center cards */
-    }
+    
     .card {
         width: 90%; /* Full width for cards */
         max-width: 300px; /* Max width for cards */
