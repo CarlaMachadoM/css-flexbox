@@ -15,7 +15,8 @@ body {
     display: flex;
     justify-content:flex-start;
     align-items:center;
-    margin: 30px;
+    margin-right: 100px;
+    margin-top: 10px;
     flex-direction: row-reverse;
 }
 
@@ -32,6 +33,7 @@ body {
 .imagem img {
     height: 450px;
     width: 450px;
+    border-radius: 10px;
 }
 
 nav {
@@ -166,6 +168,10 @@ nav ul li a:hover {
         margin: 10px 0; /* Vertical spacing for nav items */
     }
 
+    nav ul li a{
+        font-size: 25px;
+    }
+
     .flex-container {
         flex-direction: column; /* Stack text and image */
         align-items: center; /* Center content */
@@ -187,8 +193,8 @@ nav ul li a:hover {
     }
 
     .quad {
-        font-size: 24px; /* Smaller title font size */
-        margin-left: 14rem; /* Remove left margin */
+        font-size: 30px; /* Smaller title font size */
+        margin-left: 13.5rem; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
         text-align: center; /* Center title */
     }

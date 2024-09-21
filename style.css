@@ -87,6 +87,7 @@ nav ul li a:hover {
 .eagle {
     height: 500px;
     width: 500px;
+    border-radius: 10px;
 }
 
 .container {
@@ -192,10 +193,14 @@ nav ul li a:hover {
     nav ul li {
         margin: 10px 0; /* Vertical spacing for nav items */
     }
+    
+    nav ul li a{
+        font-size: 25px;
+    }
 
     .title1 {
-        font-size: 24px; /* Smaller title font size */
-        margin-left: 14rem; /* Remove left margin */
+        font-size: 30px; /* Smaller title font size */
+        margin-left: 13.5rem; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
         text-align: center; /* Center title */
     }

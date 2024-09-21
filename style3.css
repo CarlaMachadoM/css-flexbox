@@ -29,8 +29,9 @@ body {
 
 .imagem img {
     height: 450px;
-    width: 450px;
+    width: 500px;
     margin-left: 50px;
+    border-radius: 10px;
 }
 
 nav {
@@ -102,8 +103,9 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
+    flex-direction:row-reverse;
 }
 
 .card {
@@ -148,6 +150,10 @@ nav ul li a:hover {
         margin: 10px 0; /* Vertical spacing for nav items */
     }
 
+    nav ul li a{
+        font-size: 25px;
+    }
+
     .flex-container {
         flex-direction: column; /* Stack text and image */
         align-items: center; /* Center content */
@@ -166,8 +172,8 @@ nav ul li a:hover {
     }
 
     .quad {
-        font-size: 24px; /* Smaller title font size */
-        margin-left: 14rem; /* Remove left margin */
+        font-size: 30px; /* Smaller title font size */
+        margin-left: 13.5rem; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
         text-align: center; /* Center title */
     }
