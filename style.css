@@ -203,7 +203,7 @@ nav ul li a:hover {
     }
 
     .card {
-        width: 90%; /* Largura total dos cartões */
-        max-width: 300px; /* Largura máxima dos cartões */
+        width: 100%; /* Largura total dos cartões */
+        height: auto;
     }
 }
