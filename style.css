@@ -41,12 +41,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #dac26d;
+    color: #e0e4ce;
     transition: 0.3s;
 }
 
 .home {
-    color: #247235;
+    color: #114d4d;
     transition: 0.3s;
 }
 
@@ -57,9 +57,9 @@ nav ul li a:hover {
 
 .title {
     font-family: fantasy;
-    background: linear-gradient(to right, #f7e6a6 0%, #3e6b48 70%, #b5b479 100%);
+    background: linear-gradient(to right, #e0e4ce 0%, #6e9987 70%, #114d4d 100%);
     margin-top: 10px;
-    color: #3e6b48;
+    color: #114d4d;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -69,7 +69,7 @@ nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
     margin-top: 50px;
-    background: linear-gradient(to right, #f7e6a6 0%, #3e6b48 70%, #b5b479 100%);
+    background: linear-gradient(to right, #d8d8d7 0%, #6e9987 70%, #114d4d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -99,7 +99,7 @@ nav ul li a:hover {
 }
 
 .card {
-    background: linear-gradient(to right, #f7e6a6 0%, #3e6b48 70%, #b5b479 100%);
+    background: linear-gradient(to right, #e0e4ce 0%, #6e9987 70%, #114d4d 100%);
     border-radius: 8px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
