@@ -198,15 +198,19 @@ nav ul li a:hover {
     .container1 {
         flex-direction: column; /* Empilha os cartões verticalmente */
         align-items: center; /* Centraliza cartões */
+        height: auto;
+        width: 100%;
     }
 
     .container2 {
         flex-direction: column; /* Empilha os cartões verticalmente */
         align-items: center; /* Centraliza cartões */
+        height: auto;
+        width: 100%;
     }
 
     .card {
         width: 100%; /* Largura total dos cartões */
-        height: 300px;
+        height: 500px;
     }
 }
