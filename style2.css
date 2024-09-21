@@ -153,5 +153,58 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* ... (manter as regras anteriores) ... */
+    nav {
+        margin-inline: 10px; /* Reduce side margins */
+        margin-top: 0; /* Reset top margin */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing for nav items */
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack text and image */
+        align-items: center; /* Center content */
+    }
+
+    .text {
+        width: 100%; /* Full width on mobile */
+        margin-right: 0; /* Remove right margin */
+        font-size: 20px; /* Slightly smaller font size */
+    }
+
+    .imagem img {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 3.5rem; /* Remove left margin */
+    }
+
+    .quad {
+        font-size: 30px; /* Smaller title font size */
+        margin-left: 11rem; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+        text-align: center; /* Center title */
+    }
+
+    .container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+        height: auto;
+        width: 100%;
+    }
+    
+    .card {
+        width: 90%; /* Full width for cards */
+        max-width: 300px; /* Max width for cards */
+        height: 300px;
+    }
 }

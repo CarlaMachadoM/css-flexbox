@@ -178,9 +178,10 @@ nav ul li a:hover {
     }
 
     .title1 {
-        font-size: 24px; /* Ajusta tamanho da fonte */
-        text-align: center; /* Centraliza título */
-        margin: 0; /* Remove margens laterais */
+        font-size: 30px; /* Smaller title font size */
+        margin-left: 11rem; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+        text-align: center; /* Center title */
     }
 
     .pinline {
