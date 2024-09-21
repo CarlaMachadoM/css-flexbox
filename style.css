@@ -200,7 +200,7 @@ nav ul li a:hover {
 
     .title1 {
         font-size: 30px; /* Smaller title font size */
-        margin-left: 13.5rem; /* Remove left margin */
+        margin-left: 11rem; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
         text-align: center; /* Center title */
     }
@@ -226,5 +226,6 @@ nav ul li a:hover {
     .card {
         width: 90%; /* Full width for cards */
         max-width: 300px; /* Max width for cards */
+        height:300px;
     }
 }
