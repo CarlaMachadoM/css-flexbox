@@ -60,17 +60,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ee1022;
+    color:  #20e25a;
     transition: 0.3s;
 }
 
 .speeds {
-    color: #eb987f;
+    color: rgb(206, 66, 211);
     transition: 0.3s;
 }
 
 .speeds:hover {
-    color: #ee1022;
+    color:  #f6b2f8;
     transition: 0.3s;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 30px;
     margin-top: 50px;
-    background: linear-gradient(to right, #eb987f 0%, #c9c7c7 70%, #ee1022 100%);
+    background: linear-gradient(to right, rgb(206, 66, 211) 0%, #f6b2f8 70%, #20e25a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -87,9 +87,9 @@ nav ul li a:hover {
 
 .title {
     font-family: fantasy;
-    background: linear-gradient(to right, #eb987f 0%, #ffffff 70%, #ee1022 100%);
+    background: linear-gradient(to right, rgb(206, 66, 211) 0%, #f6b2f8 70%, #20e25a 100%);
     margin-top: 10px;
-    color: #ffffff;
+    color:  #3ff074;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -133,7 +133,7 @@ nav ul li a:hover {
 
 .card-rect {
     fill: none;
-    stroke: #ee1022; /* Default color */
+    stroke:  rgb(206, 66, 211); /* Default color */
     stroke-width: 2;
     stroke-dasharray: 850, 0;
     transition: all 0.5s cubic-bezier(0.62, 1, 0.75, 1);
